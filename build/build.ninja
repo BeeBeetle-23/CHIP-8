@@ -67,6 +67,15 @@ build CMakeFiles/Chip8.dir/src/memory/memory.cpp.obj: CXX_COMPILER__Chip8_unscan
   OBJECT_FILE_DIR = CMakeFiles\Chip8.dir\src\memory
   TARGET_SUPPORT_DIR = CMakeFiles\Chip8.dir
 
+build CMakeFiles/Chip8.dir/src/playground.cpp.obj: CXX_COMPILER__Chip8_unscanned_Debug C$:/Chip-8/src/playground.cpp || cmake_object_order_depends_target_Chip8
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\Chip8.dir\src\playground.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -IC:/Chip-8/include -isystem C:/msys64/ucrt64/include/SDL2
+  OBJECT_DIR = CMakeFiles\Chip8.dir
+  OBJECT_FILE_DIR = CMakeFiles\Chip8.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\Chip8.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Chip8
@@ -75,7 +84,7 @@ build CMakeFiles/Chip8.dir/src/memory/memory.cpp.obj: CXX_COMPILER__Chip8_unscan
 #############################################
 # Link the executable Chip8.exe
 
-build Chip8.exe: CXX_EXECUTABLE_LINKER__Chip8_Debug CMakeFiles/Chip8.dir/src/main.cpp.obj CMakeFiles/Chip8.dir/src/memory/memory.cpp.obj | C$:/msys64/ucrt64/lib/libSDL2.dll.a
+build Chip8.exe: CXX_EXECUTABLE_LINKER__Chip8_Debug CMakeFiles/Chip8.dir/src/main.cpp.obj CMakeFiles/Chip8.dir/src/memory/memory.cpp.obj CMakeFiles/Chip8.dir/src/playground.cpp.obj | C$:/msys64/ucrt64/lib/libSDL2.dll.a
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = C:/msys64/ucrt64/lib/libSDL2.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
